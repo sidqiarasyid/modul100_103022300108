@@ -2,11 +2,17 @@
 {
     public class Movie
     {
-        public string Title;
-        public string Director;
-        public List<String> Stars;
-        public string Description;
+        public string Title { get; set; }
+        public string Director { get; set; }
+        public List<String> Stars { get; set; }
+        public string Description { get; set; }
 
+        public Movie(string title, string director, List<string> stars, string description) {
+            this.Title = title;
+            this.Director = director;
+            this.Stars = stars;
+            this.Description = description;
+        }
        
     }
 }
